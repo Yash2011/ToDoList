@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffBE80FF"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="91dp"
+        android:layout_height="88dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/logo" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textColorHint="#000"
+        android:backgroundTint="@android:color/background_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+
+        android:hint="Name"
+        android:paddingRight="50dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/background_dark"
+        android:textColorHint="#000"
+        android:hint="Password"
+        android:paddingRight="50dp" />
+    <Button
+        android:id="@+id/user_signup_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Sign up"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/backtologin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/user_signup_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="back to login"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
